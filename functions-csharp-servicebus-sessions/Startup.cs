@@ -5,9 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using StackExchange.Redis;
 
-[assembly: FunctionsStartup(typeof(Hollan.Function.Startup))]
+[assembly: FunctionsStartup(typeof(Edwards.Function.Startup))]
 
-namespace Hollan.Function
+namespace Edwards.Function
 {
     public class Startup : FunctionsStartup
     {

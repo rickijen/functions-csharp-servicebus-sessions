@@ -2,10 +2,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Azure.ServiceBus;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
 
-namespace Hollan.Function
+namespace Edwards.Function
 {
     public class SessionTrigger
     {
@@ -16,7 +15,7 @@ namespace Hollan.Function
         }
         [FunctionName("SessionTrigger")]
         public async Task Run(
-            [ServiceBusTrigger("queue", Connection = "ServiceBusConnectionString", IsSessionsEnabled = true)]Message message, 
+            [ServiceBusTrigger("x12messages", Connection = "integrationtest01_RootManageSharedAccessKey_SERVICEBUS", IsSessionsEnabled = true)]Message message, 
             ILogger log)
         {
             log.LogInformation($"C# ServiceBus queue trigger function processed message: {Encoding.UTF8.GetString(message.Body)}");

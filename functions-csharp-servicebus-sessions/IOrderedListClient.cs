@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Hollan.Function
+namespace Edwards.Function
 {
     public interface IOrderedListClient
     {

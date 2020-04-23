@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using StackExchange.Redis;
 
-namespace Hollan.Function
+namespace Edwards.Function
 {
     public class RedisOrderedListClient : IOrderedListClient
     {
