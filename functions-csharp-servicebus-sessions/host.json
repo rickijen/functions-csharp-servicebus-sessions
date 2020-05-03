@@ -7,18 +7,11 @@
           "maxConcurrentCalls": 32,
           "maxAutoRenewDuration": "00:55:00",
           "autoComplete": false
-        },
-        "sessionHandlerOptions": {
-          "autoComplete": false,
-          "messageWaitTimeout": "00:01:00",
-          "maxAutoRenewDuration": "00:55:00",
-          "maxConcurrentSessions": 32
         }
       }
     },
     "logging": {
       "applicationInsights": {
-        "samplingExcludedTypes": "Request",
         "samplingSettings": {
           "isEnabled": true
         }

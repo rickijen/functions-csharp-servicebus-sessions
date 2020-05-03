@@ -11,7 +11,7 @@ namespace session_queue_message_generator
     {
         private static string connectionString = Environment.GetEnvironmentVariable("ServiceBusConnectionString");
         private static string queueName = Environment.GetEnvironmentVariable("QueueName");
-        private static int sessions = 10000;
+        private static int sessions = 50000;
         private static int messagePerSession = 5;
         static async Task Main(string[] args)
         {
@@ -21,7 +21,7 @@ namespace session_queue_message_generator
 
             for(int s = 0; s < sessions; s++)
             {
-                var sessionId = $"Patient-{s.ToString()}";
+                var sessionId = $"Case-{s.ToString()}";
                 var messageList = new List<Message>();
                 for(int m = 0; m < messagePerSession; m++)
                 {

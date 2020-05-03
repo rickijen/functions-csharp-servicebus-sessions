@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "functions-csharp-servicebus-sessions": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "RedisDbConnectionString": "Value"
+      }
+    }
+  }
+}
