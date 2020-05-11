@@ -21,7 +21,7 @@ namespace session_queue_message_generator
 
             for(int s = 0; s < sessions; s++)
             {
-                var sessionId = $"Case-{s.ToString()}";
+                var sessionId = $"Order-{s.ToString()}";
                 var messageList = new List<Message>();
                 for(int m = 0; m < messagePerSession; m++)
                 {
